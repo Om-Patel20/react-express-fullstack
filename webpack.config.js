@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode:'development',
@@ -12,8 +13,15 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     devServer: {
+        static: path.resolve(__dirname, 'dist'),
         historyApiFallback: true
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'index.html'),
+            filename: 'index.html'
+        })
+    ],
     module: {
         rules: [{
             test: /\.jsx?/,
