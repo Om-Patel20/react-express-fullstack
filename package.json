@@ -21,6 +21,7 @@
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "@babel/register": "^7.25.9",
+    "axios": "^1.7.9",
     "babel-loader": "^8.0.2",
     "body-parser": "^1.18.3",
     "concurrently": "^9.1.2",

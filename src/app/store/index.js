@@ -2,10 +2,9 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { defaultState } from '../../server/defaultState';
 import { createLogger } from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
-import rootSaga from './sagas';
 
 const sagaMiddleware = createSagaMiddleware();
-import * as sagas from './sagas.mock';
+import * as sagas from './sagas';
 import * as mutations from './mutations'
 
 export const store = createStore(
@@ -48,7 +47,6 @@ export const store = createStore(
     applyMiddleware(createLogger(), sagaMiddleware)
 );
 
-//for(let saga in sagas){
-//    sagaMiddleware.run(saga);
-//}
-sagaMiddleware.run(rootSaga);
+for(let saga in sagas){
+    sagaMiddleware.run(sagas[saga]);
+}
