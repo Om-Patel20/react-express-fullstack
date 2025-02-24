@@ -17,10 +17,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "@babel/register": "^7.25.9",
     "axios": "^1.7.9",
     "babel-loader": "^8.4.1",
     "body-parser": "^1.18.3",
@@ -35,6 +31,10 @@
   },
   "dependencies": {
     "@babel/node": "^7.26.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/register": "^7.25.9",
     "history": "^4.7.2",
     "md5": "^2.3.0",
     "react": "^16.4.2",
