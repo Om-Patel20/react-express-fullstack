@@ -17,24 +17,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    
-  },
-  "dependencies": {
-    "@babel/node": "^7.26.0",
     "@babel/core": "^7.0.0",
+    "@babel/node": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "@babel/register": "^7.25.9",
-    "history": "^4.7.2",
-    "md5": "^2.3.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.5.0",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
-    "redux": "^4.0.0",
-    "redux-logger": "^3.0.6",
-    "redux-saga": "^0.16.2",
-    "uuid": "^11.0.3",
     "axios": "^1.7.9",
     "babel-loader": "^8.4.1",
     "body-parser": "^1.18.3",
@@ -46,5 +33,17 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "md5": "^2.3.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.2",
+    "uuid": "^11.0.3"
   }
 }
